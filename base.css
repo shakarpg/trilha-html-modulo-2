@@ -1,5 +1,6 @@
 html, body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body {
     background-color: #f1f1f1;
@@ -11,7 +12,7 @@ body {
     width: 1200px;
     display: flex;
     margin: 0 auto;
-    background-color: aquamarine;
+    background-color: #f1f1f1; /* Cor de fundo neutra */
 }
 .main {
     display: flex;
@@ -20,19 +21,96 @@ body {
 }
 .menu {
     width: 15%;
-    background-color: aqua;
-    padding: 10px 20px 0px;
+    background-color: #f7f7f7; /* Cor do menu */
+    padding: 20px;
+    border-right: 1px solid #ddd;
 }
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.menu li {
+    margin-bottom: 10px;
+}
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.menu a:hover {
+    color: #007bff;
+}
+
 .header {
-    background-color: rgb(5, 108, 108);
+    background-color: #fff;
     min-height: 150px;
 }
+.header img {
+    width: 100%;
+    height: 150px; /* Altura fixa para o header */
+    object-fit: cover; /* Garante que a imagem cubra o espaço */
+}
+
 .content {
     background-color: white;
     min-height: 300px;
     padding: 20px;
 }
+
 .footer {
-    background-color: rgb(99, 56, 240);
-    min-height: 150px;
+    background-color: #333; /* Rodapé escuro */
+    color: white;
+    min-height: 100px;
+    padding: 20px;
+    text-align: center;
+}
+.footer p {
+    margin: 5px 0;
+}
+
+/* Estilos para a Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaço entre bordas */
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd; /* Borda sutil */
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2; /* Cor de fundo para o cabeçalho da tabela */
+}
+
+/* Estilos para o Formulário */
+form {
+    margin-top: 20px;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 98%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form button[type="submit"] {
+    background-color: #28a745; /* Verde */
+    color: white;
+}
+form button[type="reset"] {
+    background-color: #dc3545; /* Vermelho */
+    color: white;
 }
